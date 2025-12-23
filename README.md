@@ -131,19 +131,6 @@ enum class EMonsterRank : uint8 {
 
 ### 성능 최적화
 
-#### **LOD (Level of Detail) 시스템**
-```cpp
-// 거리 기반 자동 LOD 전환
-- 0-500 units:  LOD 0 (최고 품질)
-- 500-1000:     LOD 1 (중간 품질)
-- 1000-1500:    LOD 2 (낮은 품질)
-- 1500+:        LOD 3 (최소 품질)
-```
-
-**성능 개선 결과**
-- 폴리곤 감소: 최대 **85% 절감** (거리 1500+ units)
-- 렌더링 부하: **60% 감소**
-
 #### **Frustum & Distance Culling**
 - **Frustum Culling**: 카메라 밖 객체 렌더 제외
 - **Distance Culling**: 설정 거리 이상 객체 비활성화
