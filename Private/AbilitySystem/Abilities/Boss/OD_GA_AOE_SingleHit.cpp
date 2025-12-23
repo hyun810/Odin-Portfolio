@@ -11,6 +11,7 @@
 #include "Character/ODCombatCharacter.h"
 #include "Character/ODMonsterBase.h"
 #include "Character/ODPlayer.h"
+#include "Engine/OverlapResult.h"
 #include "Tags/ODAbilityTags.h"
 #include "DrawDebugHelpers.h"
 
