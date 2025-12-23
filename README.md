@@ -313,16 +313,9 @@ AI 시스템:     85% 공통 코드 / 15% 데이터
 
 ## 개발 환경
 
-### **필수 요구사항**
-- **Unreal Engine**: 5.0 이상
-- **Visual Studio**: 2019 이상 (C++17 지원)
-- **Windows 10/11**: 64-bit
-
-### **권장 사양**
-- **CPU**: Intel i7 / AMD Ryzen 7 이상
-- **RAM**: 16GB 이상
-- **GPU**: NVIDIA GTX 1060 / AMD RX 580 이상
-- **Storage**: SSD 30GB 이상
+- **Unreal Engine**: 5.4
+- **Visual Studio**: 2022
+- **Rider**: 3.1
 
 ---
 
