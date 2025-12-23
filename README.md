@@ -58,7 +58,7 @@ UBehaviorTree* SelectedBT = (Monster->GetEMonsterRank() == EMonsterRank::Boss)
 
 ---
 
-### ⚔️ Gameplay Ability System (GAS)
+### Gameplay Ability System (GAS)
 
 #### **계층적 어빌리티 구조**
 ```
@@ -377,6 +377,6 @@ AI 시스템:     85% 공통 코드 / 15% 데이터
 
 <div align="center">
 
-**🎮 Made with Unreal Engine 5 | 💻 Powered by C++ | ⚡ Optimized for Performance**
+**Made with Unreal Engine 5 | Powered by C++ | Optimized for Performance**
 
 </div>
