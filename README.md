@@ -38,6 +38,9 @@ AIPerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(
 ```
 
 #### **데이터 기반 행동 분기**
+
+**소스 코드:** [`ODAIController.cpp` (Lines 85-86)](Private/AI/ODAIController.cpp#L85-L86)
+
 ```cpp
 // 몬스터 등급에 따른 동적 BehaviorTree 선택
 UBehaviorTree* SelectedBT = (Monster->GetEMonsterRank() == EMonsterRank::Boss) 
@@ -112,6 +115,9 @@ AActor
 - **확장성**: 새 캐릭터 타입 추가 시 파생 클래스만 생성
 
 #### **타입 기반 데이터 설계**
+
+**소스 코드:** [`ODMonsterBase.h` (Lines 28-50)](Public/Character/ODMonsterBase.h#L28-L50)
+
 ```cpp
 // 몬스터 성향 - AI 동작 결정
 enum class EMonsterEngageType : uint8 {
@@ -321,6 +327,13 @@ AI 시스템:     85% 공통 코드 / 15% 데이터
 ---
 
 ## 참고 문서
+
+### **주요 소스 파일**
+- [ODAIController.h](Public/AI/ODAIController.h) - AI 컨트롤러 헤더
+- [ODAIController.cpp](Private/AI/ODAIController.cpp) - AI 컨트롤러 구현
+- [ODMonsterBase.h](Public/Character/ODMonsterBase.h) - 몬스터 베이스 클래스
+- [ODMonsterBase.cpp](Private/Character/ODMonsterBase.cpp) - 몬스터 베이스 구현
+
 
 ### **언리얼 엔진 공식 문서**
 - [Gameplay Ability System](https://docs.unrealengine.com/5.0/en-US/gameplay-ability-system-for-unreal-engine/)
