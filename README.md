@@ -333,10 +333,6 @@ AI 시스템:     85% 공통 코드 / 15% 데이터
 
 ## 참고 문서
 
-### **프로젝트 내부 문서**
-- [AI 시스템 코드 참조](Source/Documents/AI_System/ai_system_code_reference.md)
-- [AI 플로우차트](Source/Documents/Flowcharts/flowcharts.md)
-
 ### **언리얼 엔진 공식 문서**
 - [Gameplay Ability System](https://docs.unrealengine.com/5.0/en-US/gameplay-ability-system-for-unreal-engine/)
 - [AI Perception](https://docs.unrealengine.com/5.0/en-US/ai-perception-in-unreal-engine/)
