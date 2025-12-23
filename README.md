@@ -27,6 +27,8 @@ StreamOD는 모바일 게임 "Odin: Valhalla Rising"의 핵심 시스템을 언�
 - **CPU 최적화**: 플레이어 감지 시에만 반응 (초당 60회 → 0~2회)
 - **멀티 센싱**: Sight와 Damage 자극을 동시 처리
 
+**소스 코드:** [`ODAIController.cpp` (Lines 100-101)](OD/Source/OD/Private/AI/ODAIController.cpp#L100-L101)
+
 ```cpp
 // 이벤트 기반 감지 - Tick 대신 델리게이트 사용
 AIPerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(
