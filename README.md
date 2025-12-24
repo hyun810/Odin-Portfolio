@@ -8,8 +8,8 @@
 
 ## 프로젝트 소개
 
-<img width="856" height="397" alt="게임 소개 사진" src="https://github.com/user-attachments/assets/97741269-e2d6-4f1f-88f3-6e03ee15a874" />
-![오딘 배경](https://github.com/user-attachments/assets/fa989d81-8385-4957-bee1-0f147bb96c86)
+![오딘 배경](https://github.com/user-attachments/assets/e4b9d0e3-2371-4fb6-9804-d26f105b92d9)
+
 
 StreamOD는 모바일 게임 "Odin: Valhalla Rising"의 핵심 시스템을 언리얼 엔진 5로 재구현한 멀티플레이어 ARPG 프로젝트입니다. 최신 게임 개발 패턴과 성능 최적화 기법을 적용하여 확장 가능하고 유지보수가 용이한 게임 아키텍처를 구축했습니다.
 
