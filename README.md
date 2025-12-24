@@ -93,11 +93,8 @@ OD_GA_Base (기본 클래스)
 
 #### **Boss 전용 메커니즘**
 - **AOE 공격**: 범위 피해 [`(OD_GA_AOE_SingleHit.cpp)`](Private/AbilitySystem/Abilities/Boss/OD_GA_AOE_SingleHit.cpp)
-- **돌진 공격**: 이동 + 충돌 판정
-**소스 코드:** [`OD_GA_Boss_DashAttack.cpp`](Private/Character/UOD_GA_Boss_DashAttack.h#L28-L50)
-
-- **분노 모드**: 체력 구간별 강화 패턴
-**소스 코드:** [`ODMonsterBase.h` (Lines 28-50)](Public/Character/ODMonsterBase.h#L28-L50)
+- **돌진 공격**: 이동 + 충돌 판정 [`(OD_GA_Boss_DashAttack.cpp)`](Private/AbilitySystem/Abilities/Boss/OD_GA_Boss_DashAttack.cpp)
+- **분노 모드**: 체력 구간별 강화 패턴 [`(OD_GA_Boss_Enrage.cpp)`](Private/AbilitySystem/Abilities/Boss/OD_GA_Boss_Enrage.cpp)
 
 ---
 
