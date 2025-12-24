@@ -1,4 +1,4 @@
-<img width="856" height="397" alt="게임 소개 사진" src="https://github.com/user-attachments/assets/146ef36f-9fe4-42e0-9f61-272bee8c410f" /># StreamOD
+# StreamOD
 
 > **오딘: 발할라 라이징** 클론 프로젝트 - 언리얼 엔진 5 멀티플레이어 ARPG
 
