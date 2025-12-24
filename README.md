@@ -224,8 +224,8 @@ OD/Source/OD/
 ## 기술 스택
 
 ### **핵심 기술**
-- **Unreal Engine 5.0+**: 차세대 게임 엔진
-- **C++17**: 모던 C++ 표준
+- **Unreal Engine 5.4
+- **C++17**
 - **Gameplay Ability System**: UE5 공식 어빌리티 프레임워크
 - **Behavior Tree**: 데이터 기반 AI
 - **AI Perception**: 이벤트 기반 감각 시스템
