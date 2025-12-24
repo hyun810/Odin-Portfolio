@@ -171,13 +171,16 @@ enum class EMonsterRank : uint8 {
   - 네트워크 복제 (`bReplicates = true`)
 
  #### **던전 시스템(2안)**
-- **인스턴스 풀 관리**: 객체 풀 패턴으로 던전 재사용 [`ODDungeonInstanceManager`](Private/Manager/ODDungeonInstanceManager.cpp)
+- **인스턴스 풀 관리**
+  - 객체 풀 패턴으로 던전 재사용 [`ODDungeonInstanceManager`](Private/Manager/ODDungeonInstanceManager.cpp)
   - 여러 던전 인스턴스 풀 관리 (`DungeonInstances[]`)
   - 빈 인스턴스 자동 할당 [`ConnectPartyToDunGeon` (Lines 67-96)](Private/Manager/ODDungeonInstanceManager.cpp#L67-L96)
-- **파티별 인스턴스**: 독립된 던전 공간 [`ODDungeonInstance`](Private/LevelInstance/ODDungeonInstance.cpp)
+- **파티별 인스턴스**
+  - 독립된 던전 공간 [`ODDungeonInstance`](Private/LevelInstance/ODDungeonInstance.cpp)
   - 하나의 파티 정보 소유 [`Party` (Lines 144-193)](Private/LevelInstance/ODDungeonInstance.cpp#L144-L193)
   - 파티 진입/퇴장, 텔레포트 처리
-- **몬스터 세션**: 던전 내 몬스터 관리 [`ODDungeonSessionManager`](Private/Manager/ODDungeonSessionManager.cpp)
+- **몬스터 세션**
+  - 던전 내 몬스터 관리 [`ODDungeonSessionManager`](Private/Manager/ODDungeonSessionManager.cpp)
   - 서버 권한 체크, 네트워크 복제
 
 #### **데이터 동기화**
