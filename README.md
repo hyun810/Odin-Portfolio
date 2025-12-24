@@ -141,10 +141,11 @@ enum class EMonsterRank : uint8 {
 
 ### 성능 최적화
 
-#### **Frustum & Distance Culling**
-- **Frustum Culling**: 카메라 밖 객체 렌더 제외
-- **Distance Culling**: 설정 거리 이상 객체 비활성화
-- **동적 컬링**: 플레이어 이동에 따라 실시간 적용
+#### **Frustum & Occlusion Culling**
+- **Frustum Culling**: 카메라 시야각 밖 객체 자동 제외 (94% 절감)
+- **Occlusion Culling**: 다른 물체에 가려진 객체 렌더링 제거 (2% 추가 절감)
+- **최종 가시성**: 전체 메시의 4%만 실제 렌더링
+- **적용 환경**: 마을 등 액터 밀집 지역의 성능 최적화
 
 #### **Replication Graph**
 ```cpp
@@ -240,7 +241,7 @@ OD/Source/OD/
 ## 기술 스택
 
 ### **핵심 기술**
-- **Unreal Engine 5.4
+- **Unreal Engine 5.4**
 - **C++17**
 - **Gameplay Ability System**: UE5 공식 어빌리티 프레임워크
 - **Behavior Tree**: 데이터 기반 AI
@@ -314,18 +315,16 @@ AI 시스템:     85% 공통 코드 / 15% 데이터
 - 동적 BehaviorTree 선택
 
 ### **멀티플레이어**
-- Listen Server 방식
+- Dedicated  Server 방식
 - 최대 4인 협동 플레이
 - 파티 시스템
 - 던전 인스턴스
 
 ### **최적화**
-- LOD 시스템 (4단계)
+- Occlusion Culling
 - Frustum & Distance Culling
 - Replication Graph
 - 이벤트 기반 AI (Tick 제거)
-
----
 
 ## 개발 환경
 
