@@ -169,15 +169,16 @@ enum class EMonsterRank : uint8 {
 - **세션 관리**: 던전 내 몬스터 스폰/클리어 [(`ODDungeonSessionManager.cpp`)](Private/Manager/ODDungeonSessionManager.cpp)
   - 서버 권한 체크 (`HasAuthority()`)
   - 네트워크 복제 (`bReplicates = true`)
- 
+ [`ODAIController.cpp` (Lines 85-86)](Private/AI/ODAIController.cpp#L85-L86)
+
  #### **던전 시스템(2안)**
-- **인스턴스 풀 관리**: 객체 풀 패턴으로 던전 재사용 ([ODDungeonInstanceManager](Private/Manager/ODDungeonInstanceManager.cpp#L10-L14))
+- **인스턴스 풀 관리**: 객체 풀 패턴으로 던전 재사용 [`ODDungeonInstanceManager` (Lines 10-14)](Private/Manager/ODDungeonInstanceManager.cpp#L10-L14)
   - 여러 던전 인스턴스 풀 관리 (`DungeonInstances[]`)
-  - 빈 인스턴스 자동 할당 ([ConnectPartyToDunGeon](Private/Manager/ODDungeonInstanceManager.cpp#L67-L96))
-- **파티별 인스턴스**: 독립된 던전 공간 ([ODDungeonInstance](Private/LevelInstance/ODDungeonInstance.cpp#L12-L23))
-  - 하나의 파티 정보 소유 ([Party](Private/LevelInstance/ODDungeonInstance.cpP#L144-L193))
+  - 빈 인스턴스 자동 할당 [`ConnectPartyToDunGeon` (Lines 67-96)](Private/Manager/ODDungeonInstanceManager.cpp#L67-L96)
+- **파티별 인스턴스**: 독립된 던전 공간 [`ODDungeonInstance` (Lines 12-23)](Private/LevelInstance/ODDungeonInstance.cpp#L12-L23)
+  - 하나의 파티 정보 소유 [`Party` (Lines 144-193)](Private/LevelInstance/ODDungeonInstance.cpp#L144-L193)
   - 파티 진입/퇴장, 텔레포트 처리
-- **몬스터 세션**: 던전 내 몬스터 관리 ([ODDungeonSessionManager](Private/Manager/ODDungeonSessionManager.cpp#L10-L15))
+- **몬스터 세션**: 던전 내 몬스터 관리 [`ODDungeonSessionManager` (Lines 10-15)](Private/Manager/ODDungeonSessionManager.cpp#L10-L15)
   - 서버 권한 체크, 네트워크 복제
 
 #### **데이터 동기화**
