@@ -159,9 +159,16 @@ enum class EMonsterRank : uint8 {
 ### 멀티플레이어 시스템
 
 #### **네트워크 아키텍처**
-- **Listen Server**: 호스트 플레이어가 서버 겸임
+- **Dedicated Server**: 서버와 클라이언트가 별도
 - **최대 4인 협동**: 파티 시스템 지원
-- **던전 세션**: 인스턴스 던전 매니저 (`ODDungeonSessionManager`)
+
+#### **던전 시스템**
+- **인스턴스 던전**: 파티별 독립 인스턴스 (`ODDungeonInstance`)
+  - 각 `ODDungeonInstance`가 하나의 파티 정보를 소유 (`Party`)
+  - 파티 진입/퇴장 관리 (`PartyInDungeon()`, `PartyOutDungeon()`)
+- **세션 관리**: 던전 내 몬스터 스폰/클리어 [(`ODDungeonSessionManager.cpp`)](Private/Manager/ODDungeonSessionManager.h)
+  - 서버 권한 체크 (`HasAuthority()`)
+  - 네트워크 복제 (`bReplicates = true`)
 
 #### **데이터 동기화**
 ```cpp
