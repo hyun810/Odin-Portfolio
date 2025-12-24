@@ -92,7 +92,7 @@ OD_GA_Base (기본 클래스)
 - **Sniper**: 4개 액티브 스킬 (원거리 저격)
 
 #### **Boss 전용 메커니즘**
-- **AOE 공격**: 범위 피해
+- **AOE 공격**: 범위 피해  
 **소스 코드:** [`OD_GA_AOE_SingleHit.cpp`](Private/AbilitySystem/Abilities/Boss/OD_GA_AOE_SingleHit.cpp)
 
 - **돌진 공격**: 이동 + 충돌 판정
