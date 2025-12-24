@@ -166,7 +166,7 @@ enum class EMonsterRank : uint8 {
 - **인스턴스 던전**: 파티별 독립 인스턴스 (`ODDungeonInstance`)
   - 각 `ODDungeonInstance`가 하나의 파티 정보를 소유 (`Party`)
   - 파티 진입/퇴장 관리 (`PartyInDungeon()`, `PartyOutDungeon()`)
-- **세션 관리**: 던전 내 몬스터 스폰/클리어 [(`ODDungeonSessionManager.cpp`)](Private/Manager/ODDungeonSessionManager.h)
+- **세션 관리**: 던전 내 몬스터 스폰/클리어 [(`ODDungeonSessionManager.cpp`)](Private/Manager/ODDungeonSessionManager.cpp)
   - 서버 권한 체크 (`HasAuthority()`)
   - 네트워크 복제 (`bReplicates = true`)
 
