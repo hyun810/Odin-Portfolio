@@ -143,9 +143,9 @@ enum class EMonsterRank : uint8 {
 
 #### **Frustum & Occlusion Culling**
 - **Frustum Culling**: 카메라 시야각 밖 객체 자동 제외 (94% 절감)
+- **Distance Culling**: 설정 거리 이상 객체 비활성화로 연산 부하 감소
 - **Occlusion Culling**: 다른 물체에 가려진 객체 렌더링 제거 (2% 추가 절감)
-- **최종 가시성**: 전체 메시의 4%만 실제 렌더링
-- **적용 환경**: 마을 등 액터 밀집 지역의 성능 최적화
+- **최종 가시성**: 전체 메시의 4%만 실제 렌더링 (마을 등 밀집 지역 최적화)
 
 #### **Replication Graph**
 ```cpp
