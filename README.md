@@ -143,6 +143,8 @@ enum class EMonsterRank : uint8 {
 
 ### 성능 최적화
 
+<img width="2048" height="1253" alt="CullingSystem" src="https://github.com/user-attachments/assets/61838c08-40b5-43cb-b57d-451e65bc8f89" />
+
 #### **Frustum & Occlusion Culling**
 - **Frustum Culling**: 카메라 시야각 밖 객체 자동 제외 (94% 절감)
 - **Distance Culling**: 설정 거리 이상 객체 비활성화로 연산 부하 감소
