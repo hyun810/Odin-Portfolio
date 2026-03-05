@@ -163,6 +163,8 @@ enum class EMonsterRank : uint8 {
 
 ### 멀티플레이어 시스템
 
+<img width="1198" height="682" alt="멀티 영상" src="https://github.com/user-attachments/assets/3a76748d-e8fe-4ba4-9611-b8fb2ee96bcc" />
+
 #### **네트워크 아키텍처**
 - **Dedicated Server**: 서버와 클라이언트가 별도
 - **최대 4인 협동**: 파티 시스템 지원
