@@ -1,4 +1,4 @@
-# StreamOD
+<img width="2043" height="1255" alt="CullingSystem" src="https://github.com/user-attachments/assets/e0547a94-cb52-4a10-991d-428b21f049bd" /># StreamOD
 
 > **오딘: 발할라 라이징** 클론 프로젝트 - 언리얼 엔진 5 멀티플레이어 ARPG
 
@@ -143,7 +143,7 @@ enum class EMonsterRank : uint8 {
 
 ### 성능 최적화
 
-<img width="2048" height="1253" alt="CullingSystem" src="https://github.com/user-attachments/assets/61838c08-40b5-43cb-b57d-451e65bc8f89" />
+<img width="2043" height="1255" alt="CullingSystem" src="https://github.com/user-attachments/assets/4682f4dc-fb59-4740-886e-795a30b2dfe2" />
 
 #### **Frustum & Occlusion Culling**
 - **Frustum Culling**: 카메라 시야각 밖 객체 자동 제외 (94% 절감)
